@@ -10,7 +10,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf package-lock.json"
   },
   "devDependencies": {
     "prettier": "latest",

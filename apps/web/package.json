@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@xteam-app/ui": "*",
     "next": "12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "ui": "*"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "config": "*",
