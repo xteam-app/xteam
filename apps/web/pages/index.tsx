@@ -1,4 +1,4 @@
-import { Button } from "@xteam-app/ui";
+import { Button } from '@xteam-app/ui';
 
 export default function Web() {
   return (
