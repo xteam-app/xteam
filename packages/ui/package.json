@@ -1,14 +1,40 @@
 {
   "name": "@xteam-app/ui",
   "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
+  "main": "dist/commonjs/index.js",
+  "types": "dist/typescript/src/index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "tsconfig": "*",
     "config": "*",
+    "react-native-builder-bob": "^0.18.2",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
-  }
+  },
+  "react-native": "src/index.tsx",
+  "module": "dist/module/index.js",
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "files": [
+    "src",
+    "dist",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
+  ]
 }
