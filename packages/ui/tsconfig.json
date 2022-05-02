@@ -1,6 +1,6 @@
 {
-//  "extends": "tsconfig/react-library.json",
-  "extends": "tsconfig/bob.json",
+  "extends": "tsconfig/react-library.json",
+//  "extends": "tsconfig/bob.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }
