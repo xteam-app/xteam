@@ -1,10 +1,10 @@
-import { Button } from "@xteam-app/ui";
+import { HelloWorld } from "@xteam-app/ui";
 
 export default function Docs() {
   return (
     <div>
       <h1>Docs</h1>
-      <Button />
+      <HelloWorld />
     </div>
   );
 }
