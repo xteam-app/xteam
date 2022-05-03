@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start --localhost",
-    "android": "expo start --android",
-    "ios": "expo start --ios --localhost",
-    "web": "expo start --web --localhost",
-    "eject": "expo eject",
+    "start:android": "expo start --android --localhost",
+    "start:ios": "expo start --ios --localhost",
+    "start:web": "start-storybook -p 6006",
     "update-stories": "sb-rn-get-stories --config-path .ondevice",
-    "prestart": "yarn update-stories",
+    "prestart": "npm run update-stories",
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
