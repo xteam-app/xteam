@@ -7,9 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "npm run start -w @xteam-app/app -- --localhost",
-    "start:ios": "npm run ios -w @xteam-app/app -- --localhost",
-    "start:web": "npm run web -w @xteam-app/app -- --localhost",
+    "start:ios": "npm run ios -w @xteam-app/app",
+    "start:web": "npm run web -w @xteam-app/app",
+    "docs:ui:ios": "npm run start:ios -w @xteam-app/docs-ui",
+    "docs:ui:web": "npm run start:web -w @xteam-app/docs-ui",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
