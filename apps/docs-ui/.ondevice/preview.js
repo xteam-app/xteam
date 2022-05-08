@@ -1,6 +1,5 @@
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
-
-export const decorators = [withBackgrounds];
+import { UIThemeProvider, utilities } from "@xteam-app/ui";
 
 export const parameters = {
   backgrounds: [
@@ -15,3 +14,12 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  withBackgrounds,
+  (Story) => (
+    <UIThemeProvider utilities={utilities}>
+      <Story />
+    </UIThemeProvider>
+  )
+]
