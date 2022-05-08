@@ -1,4 +1,5 @@
 import { UIThemeProvider, utilities } from "@xteam-app/ui";
+import { useDarkMode } from "storybook-dark-mode";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,9 +12,15 @@ export const parameters = {
 };
 
 export const decorators = [
-  (Story) => (
-    <UIThemeProvider utilities={utilities}>
-      <Story />
-    </UIThemeProvider>
-  ),
+  (Story) => {
+    const dark = useDarkMode();
+    return (
+      <UIThemeProvider
+        utilities={utilities}
+        colorScheme={dark ? "dark" : "light"}
+      >
+        <Story />
+      </UIThemeProvider>
+    );
+  },
 ];

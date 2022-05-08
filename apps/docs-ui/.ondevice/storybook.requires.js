@@ -33,6 +33,7 @@ const getStories = () => {
   return [
     require("../stories/Button/Button.stories.tsx"),
     require("../stories/ButtonTmp/ButtonTmp.stories.tsx"),
+    require("../stories/elements/Text.stories.tsx"),
     require("../stories/HelloWorld.stories.tsx"),
   ];
 };
