@@ -12,7 +12,7 @@
     "docs:ui:ios": "npm run start:ios -w @xteam-app/docs-ui",
     "docs:ui:web": "npm run start:web -w @xteam-app/docs-ui",
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev --parallel --filter=*ui*",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf package-lock.json"

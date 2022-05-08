@@ -3,14 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:android": "expo start --android --localhost",
-    "start:ios": "expo start --ios --localhost",
-    "start:web": "start-storybook -p 6006",
     "update-stories": "sb-rn-get-stories --config-path .ondevice",
-    "prestart": "npm run update-stories",
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "dev": "start-storybook -p 6006 --quiet",
+    "dev:android": "expo start --android --localhost",
+    "dev:ios": "expo start --ios --localhost",
+    "doc": "build-storybook"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.15.0",
