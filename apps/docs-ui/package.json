@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "doc": "build-storybook --docs -o ./dist",
     "update-stories": "sb-rn-get-stories --config-path .ondevice",
     "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
     "dev": "start-storybook -p 6006 --quiet",
-    "dev:android": "expo start --android --localhost",
-    "dev:ios": "expo start --ios --localhost",
-    "doc": "build-storybook"
+    "dev:native:android": "expo start --android --localhost",
+    "dev:native:ios": "expo start --ios --localhost",
+    "dev:android": "run-p update-stories dev:native:android",
+    "dev:ios": "run-p update-stories dev:native:ios"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.15.0",
@@ -39,6 +41,7 @@
     "@types/react-native": "~0.64.12",
     "babel-loader": "^8.2.3",
     "babel-plugin-react-native-web": "^0.17.5",
+    "npm-run-all": "^4.1.5",
     "typescript": "~4.3.5"
   },
   "private": true

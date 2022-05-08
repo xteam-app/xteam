@@ -18,7 +18,9 @@
   "scripts": {
     "prepare": "bob build",
     "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn  -o ./src/theme/tailwind.json",
-    "dev": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn  -o ./src/theme/tailwind.json --watch\""
+    "dev": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn  -o ./src/theme/tailwind.json --watch\"",
+    "dev:ios": "npm run dev",
+    "dev:android": "npm run dev"
   },
   "eslintIgnore": [
     "node_modules/",
