@@ -1,11 +1,15 @@
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
-import { UIThemeProvider, utilities } from "@xteam-app/ui";
+import { UIThemeProvider, utilities } from "@xteam-app/ui/src";
+import { Appearance } from "react-native";
 
 export const parameters = {
   backgrounds: [
-    { name: "plain", value: "white", default: true },
-    { name: "warm", value: "hotpink" },
-    { name: "cool", value: "deepskyblue" },
+    { name: "light", value: "white" },
+    {
+      name: "dark",
+      value: "#232323",
+      default: Appearance.getColorScheme() === "dark",
+    },
   ],
   controls: {
     matchers: {
@@ -18,8 +22,11 @@ export const parameters = {
 export const decorators = [
   withBackgrounds,
   (Story) => (
-    <UIThemeProvider utilities={utilities}>
+    <UIThemeProvider
+      utilities={utilities}
+      colorScheme={Appearance.getColorScheme()}
+    >
       <Story />
     </UIThemeProvider>
-  )
-]
+  ),
+];
