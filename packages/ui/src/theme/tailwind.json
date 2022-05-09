@@ -1,20 +1,47 @@
 {
-	"bg-pink-500": {
+	"w-full": {
 		"style": {
-			"--tw-bg-opacity": 1,
-			"backgroundColor": "rgb(236 72 153 / var(--tw-bg-opacity))"
+			"width": "100%"
 		}
 	},
-	"bg-red-800": {
+	"bg-dark-secondary-100": {
 		"style": {
 			"--tw-bg-opacity": 1,
-			"backgroundColor": "rgb(153 27 27 / var(--tw-bg-opacity))"
+			"backgroundColor": "rgb(17 24 39 / var(--tw-bg-opacity))"
 		}
 	},
-	"text-xl": {
+	"bg-light-secondary-100": {
 		"style": {
-			"fontSize": 20,
-			"lineHeight": 28
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(255 255 255 / var(--tw-bg-opacity))"
+		}
+	},
+	"p-4": {
+		"style": {
+			"paddingTop": 16,
+			"paddingRight": 16,
+			"paddingBottom": 16,
+			"paddingLeft": 16
+		}
+	},
+	"text-left": {
+		"style": {
+			"textAlign": "left"
+		}
+	},
+	"text-center": {
+		"style": {
+			"textAlign": "center"
+		}
+	},
+	"text-right": {
+		"style": {
+			"textAlign": "right"
+		}
+	},
+	"text-justify": {
+		"style": {
+			"textAlign": "justify"
 		}
 	},
 	"text-sm": {
@@ -23,21 +50,51 @@
 			"lineHeight": 20
 		}
 	},
+	"text-md": {
+		"style": {
+			"fontSize": 16,
+			"lineHeight": 24
+		}
+	},
+	"text-2xl": {
+		"style": {
+			"fontSize": 24,
+			"lineHeight": 32
+		}
+	},
+	"text-lg": {
+		"style": {
+			"fontSize": 18,
+			"lineHeight": 28
+		}
+	},
 	"font-bold": {
 		"style": {
 			"fontWeight": "700"
 		}
 	},
-	"text-yellow-500": {
+	"font-semibold": {
 		"style": {
-			"--tw-text-opacity": 1,
-			"color": "rgb(234 179 8 / var(--tw-text-opacity))"
+			"fontWeight": "600"
 		}
 	},
-	"text-yellow-200": {
+	"text-dark-primary-100": {
+		"style": {
+			"color": "rgba(0,0,0,.8)"
+		}
+	},
+	"dark:bg-dark-secondary-100": {
+		"style": {
+			"--tw-bg-opacity": 1,
+			"backgroundColor": "rgb(17 24 39 / var(--tw-bg-opacity))"
+		},
+		"media": "(prefers-color-scheme: dark)"
+	},
+	"dark:text-light-primary-100": {
 		"style": {
 			"--tw-text-opacity": 1,
-			"color": "rgb(254 240 138 / var(--tw-text-opacity))"
-		}
+			"color": "rgb(255 255 255 / var(--tw-text-opacity))"
+		},
+		"media": "(prefers-color-scheme: dark)"
 	}
 }

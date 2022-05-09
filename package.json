@@ -9,9 +9,10 @@
   "scripts": {
     "start:ios": "npm run ios -w @xteam-app/app",
     "start:web": "npm run web -w @xteam-app/app",
-    "build": "turbo run build",
+    "build": "turbo run build --filter=!web --filter=!docs",
     "dev": "turbo run dev --parallel --filter=*ui*",
     "dev:ios": "turbo run dev:ios --parallel --filter=*ui*",
+    "update-stories": "npm run update-stories -w @xteam-app/docs-ui",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf package-lock.json"
