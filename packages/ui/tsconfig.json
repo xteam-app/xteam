@@ -1,6 +1,19 @@
 {
   "extends": "tsconfig/react-library.json",
-//  "extends": "tsconfig/bob.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@types": [
+        "src/types.ts"
+      ]
+    }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
 }
