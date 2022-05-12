@@ -1,6 +1,7 @@
 {
   "name": "@xteam-app/docs-ui",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "doc": "build-storybook --docs -o ./dist",
@@ -44,6 +45,5 @@
     "npm-run-all": "^4.1.5",
     "storybook-dark-mode": "^1.1.0",
     "typescript": "~4.3.5"
-  },
-  "private": true
+  }
 }

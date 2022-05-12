@@ -25,10 +25,8 @@
     "node_modules/",
     "dist/"
   ],
-  "peerDependencies": {
-    "react": "*",
-    "react-dom": "*",
-    "react-native": "*"
+  "dependencies": {
+    "tailwind-rn": "^4.2.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
@@ -42,7 +40,9 @@
     "tsconfig": "*",
     "typescript": "^4.5.3"
   },
-  "dependencies": {
-    "tailwind-rn": "^4.2.0"
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*"
   }
 }
