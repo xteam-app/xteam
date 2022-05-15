@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react';
 import { View } from 'react-native'
 import { useTailwind } from 'tailwind-rn'
 import { BlockProps } from '@types'

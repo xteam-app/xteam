@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react';
 import { Block, Text } from '../../elements'
 
 export const Header: FC = ({ children }) => {

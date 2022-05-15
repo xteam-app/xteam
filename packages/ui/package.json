@@ -20,7 +20,7 @@
     "dev": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn  -o ./src/theme/tailwind.json --watch\"",
     "dev:ios": "npm run dev",
     "dev:android": "npm run dev",
-    "lint": "eslint"
+    "lint": "eslint --ext .js,.ts,.tsx ."
   },
   "eslintIgnore": [
     "node_modules/",
