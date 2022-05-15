@@ -17,9 +17,12 @@
     "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,ts,tsx,md}\"",
     "format:fix": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "validate": "npm run format:check && npm run lint && npm run build",
-    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf package-lock.json"
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf package-lock.json",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "prettier": "latest",
     "turbo": "latest"
   },
