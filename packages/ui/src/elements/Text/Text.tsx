@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 import { Text as RNText } from 'react-native'
 import { useTailwind } from 'tailwind-rn'
 import { TextProps } from '@types'

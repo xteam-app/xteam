@@ -14,7 +14,8 @@
     "dev:ios": "turbo run dev:ios --parallel --filter=*ui*",
     "update-stories": "npm run update-stories -w @xteam-app/docs-ui",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "prettier --ignore-path .gitignore --list-different \"**/*.{js,jsx,ts,tsx,md}\"",
+    "format:fix": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf package-lock.json"
   },
   "devDependencies": {

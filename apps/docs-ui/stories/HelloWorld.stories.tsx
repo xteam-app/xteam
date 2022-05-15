@@ -5,6 +5,6 @@ export default {
   component: HelloWorld,
 }
 
-const Basic = (args: any) => <HelloWorld {...args} />;;;
+const Basic = (args: any) => <HelloWorld {...args} />
 
 export { Basic }

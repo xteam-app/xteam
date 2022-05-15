@@ -13,7 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     // https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin
     // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier'
+    'prettier',
   ],
   env: {
     node: true,

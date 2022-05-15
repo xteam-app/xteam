@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 import { Block } from '../../elements'
 import { BlockProps, ContainerProps } from '@types'
 
