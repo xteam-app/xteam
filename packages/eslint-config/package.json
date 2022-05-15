@@ -1,0 +1,28 @@
+{
+  "name": "@xteam-app/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/xteam-app/xteam#readme",
+  "bugs": {
+    "url": "https://github.com/xteam-app/xteam/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xteam-app/xteam.git"
+  },
+  "license": "ISC",
+  "author": "Alex Iliushyk <ailushyk@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.29.4"
+  },
+  "peerDependencies": {
+    "eslint": "^8.15.0"
+  }
+}

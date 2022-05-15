@@ -1,17 +1,17 @@
-import { StatusBar } from "expo-status-bar";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { StatusBar } from 'expo-status-bar'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-import useCachedResources from "./hooks/useCachedResources";
-import useColorScheme from "./hooks/useColorScheme";
-import Navigation from "./navigation";
-import { UIThemeProvider, utilities } from "@xteam-app/ui";
+import useCachedResources from './hooks/useCachedResources'
+import useColorScheme from './hooks/useColorScheme'
+import Navigation from './navigation'
+import { UIThemeProvider, utilities } from '@xteam-app/ui'
 
 export default function App() {
-  const isLoadingComplete = useCachedResources();
-  const colorScheme = useColorScheme();
+  const isLoadingComplete = useCachedResources()
+  const colorScheme = useColorScheme()
 
   if (!isLoadingComplete) {
-    return null;
+    return null
   } else {
     return (
       <UIThemeProvider utilities={utilities}>
@@ -20,6 +20,6 @@ export default function App() {
           <StatusBar />
         </SafeAreaProvider>
       </UIThemeProvider>
-    );
+    )
   }
 }

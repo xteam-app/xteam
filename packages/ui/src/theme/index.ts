@@ -1,4 +1,4 @@
-import utilities from "./tailwind.json";
+import utilities from './tailwind.json'
 
-export { utilities };
-export { TailwindProvider as UIThemeProvider } from "tailwind-rn";
+export { utilities }
+export { TailwindProvider as UIThemeProvider } from 'tailwind-rn'

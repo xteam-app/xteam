@@ -5,40 +5,40 @@ import {
   addDecorator,
   addParameters,
   addArgsEnhancer,
-} from "@storybook/react-native";
+} from '@storybook/react-native'
 
-import "@storybook/addon-ondevice-notes/register";
-import "@storybook/addon-ondevice-controls/register";
-import "@storybook/addon-ondevice-backgrounds/register";
-import "@storybook/addon-ondevice-actions/register";
+import '@storybook/addon-ondevice-notes/register'
+import '@storybook/addon-ondevice-controls/register'
+import '@storybook/addon-ondevice-backgrounds/register'
+import '@storybook/addon-ondevice-actions/register'
 
-import { argsEnhancers } from "@storybook/addon-actions/dist/modern/preset/addArgs";
+import { argsEnhancers } from '@storybook/addon-actions/dist/modern/preset/addArgs'
 
-import { decorators, parameters } from "./preview";
+import { decorators, parameters } from './preview'
 
 if (decorators) {
-  decorators.forEach((decorator) => addDecorator(decorator));
+  decorators.forEach((decorator) => addDecorator(decorator))
 }
 
 if (parameters) {
-  addParameters(parameters);
+  addParameters(parameters)
 }
 
 // temporary fix for https://github.com/storybookjs/react-native/issues/327 whilst the issue is investigated
 try {
-  argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
+  argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer))
 } catch {}
 
 const getStories = () => {
   return [
-    require("../stories/Button/Button.stories.tsx"),
-    require("../stories/components/Container.stories.tsx"),
-    require("../stories/components/Header.stories.tsx"),
-    require("../stories/elements/Block.stories.tsx"),
-    require("../stories/elements/Text.stories.tsx"),
-    require("../stories/HelloWorld.stories.tsx"),
-    require("../stories/screens/Welcome.stories.tsx"),
-  ];
-};
+    require('../stories/Button/Button.stories.tsx'),
+    require('../stories/components/Container.stories.tsx'),
+    require('../stories/components/Header.stories.tsx'),
+    require('../stories/elements/Block.stories.tsx'),
+    require('../stories/elements/Text.stories.tsx'),
+    require('../stories/HelloWorld.stories.tsx'),
+    require('../stories/screens/Welcome.stories.tsx'),
+  ]
+}
 
-configure(getStories, module, false);
+configure(getStories, module, false)

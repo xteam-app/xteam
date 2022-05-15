@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
-import EditScreenInfo from "../components/EditScreenInfo";
-import { View } from "../components/Themed";
-import { Header } from "@xteam-app/ui";
+import EditScreenInfo from '../components/EditScreenInfo'
+import { View } from '../components/Themed'
+import { Header } from '@xteam-app/ui'
 
 export default function TabTwoScreen() {
   return (
@@ -15,22 +15,22 @@ export default function TabTwoScreen() {
       />
       <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: "80%",
+    width: '80%',
   },
-});
+})

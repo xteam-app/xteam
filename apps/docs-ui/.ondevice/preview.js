@@ -1,14 +1,14 @@
-import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
-import { UIThemeProvider, utilities } from "@xteam-app/ui/src";
-import { Appearance } from "react-native";
+import { withBackgrounds } from '@storybook/addon-ondevice-backgrounds'
+import { UIThemeProvider, utilities } from '@xteam-app/ui/src'
+import { Appearance } from 'react-native'
 
 export const parameters = {
   backgrounds: [
-    { name: "light", value: "white" },
+    { name: 'light', value: 'white' },
     {
-      name: "dark",
-      value: "#232323",
-      default: Appearance.getColorScheme() === "dark",
+      name: 'dark',
+      value: '#232323',
+      default: Appearance.getColorScheme() === 'dark',
     },
   ],
   controls: {
@@ -17,7 +17,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
-};
+}
 
 export const decorators = [
   withBackgrounds,
@@ -29,4 +29,4 @@ export const decorators = [
       <Story />
     </UIThemeProvider>
   ),
-];
+]

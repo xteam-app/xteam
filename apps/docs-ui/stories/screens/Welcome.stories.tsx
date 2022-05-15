@@ -1,10 +1,10 @@
-import { Story } from "@storybook/react";
-import { Header, Text } from "@xteam-app/ui";
-import { Container } from "@xteam-app/ui/src";
+import { Story } from '@storybook/react'
+import { Header, Text } from '@xteam-app/ui'
+import { Container } from '@xteam-app/ui/src'
 
 export default {
-  title: "Screens/Welcome",
-};
+  title: 'Screens/Welcome',
+}
 
 const Basic: Story = (args) => {
   return (
@@ -12,7 +12,7 @@ const Basic: Story = (args) => {
       <Header>Welcome</Header>
       <Text>Click on screen!</Text>
     </Container>
-  );
-};
+  )
+}
 
-export { Basic };
+export { Basic }

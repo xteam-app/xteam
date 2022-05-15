@@ -1,4 +1,4 @@
-import { HelloWorld } from "@xteam-app/ui";
+import { HelloWorld } from '@xteam-app/ui'
 
 export default function Docs() {
   return (
@@ -6,5 +6,5 @@ export default function Docs() {
       <h1>Docs</h1>
       <HelloWorld />
     </div>
-  );
+  )
 }
