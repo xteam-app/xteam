@@ -11,7 +11,8 @@
     "dev:native:android": "expo start --android --localhost",
     "dev:native:ios": "expo start --ios --localhost",
     "dev:android": "run-p update-stories dev:native:android",
-    "dev:ios": "run-p update-stories dev:native:ios"
+    "dev:ios": "run-p update-stories dev:native:ios",
+    "lint": "eslint"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.15.0",
@@ -24,6 +25,7 @@
     "@storybook/addon-ondevice-controls": "next",
     "@storybook/addon-ondevice-notes": "next",
     "@storybook/react-native": "next",
+    "@xteam-app/config": "*",
     "@xteam-app/ui": "*",
     "expo": "~44.0.0",
     "expo-status-bar": "~1.2.0",
@@ -42,6 +44,7 @@
     "@types/react-native": "~0.64.12",
     "babel-loader": "^8.2.3",
     "babel-plugin-react-native-web": "^0.17.5",
+    "eslint": "^8.15.0",
     "npm-run-all": "^4.1.5",
     "storybook-dark-mode": "^1.1.0",
     "typescript": "~4.3.5"
