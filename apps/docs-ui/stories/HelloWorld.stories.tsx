@@ -1,12 +1,10 @@
-import { HelloWorld } from "@xteam-app/ui";
+import { HelloWorld } from '@xteam-app/ui'
 
 export default {
   title: 'Hello World Inner',
-  component: HelloWorld
+  component: HelloWorld,
 }
 
 const Basic = (args: any) => <HelloWorld {...args} />
 
-export {
-  Basic
-}
+export { Basic }

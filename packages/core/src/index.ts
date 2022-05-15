@@ -1,3 +1,3 @@
 export const sayHello = () => {
-  console.log('Hello core!');
+  console.log('Hello core!')
 }
